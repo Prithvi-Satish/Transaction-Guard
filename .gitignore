@@ -216,3 +216,16 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+prithvi_clone/
+sara_clone/
+vignesh_clone/
+vikrant_clone/
+orchestrator_agent/outputs/
+__pycache__/
+*.pyc
+demo_frontend/node_modules/
+demo_frontend/.next/
+demo_frontend/out/
+demo_frontend/.vercel/
+demo_frontend/.runtime/
+demo_frontend/.vscode/

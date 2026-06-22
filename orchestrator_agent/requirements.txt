@@ -1,0 +1,6 @@
+# Run with the shared project venv used across cloned repos.
+# If you build a dedicated venv for the orchestrator, install these minimums.
+pydantic>=2.5.0
+python-dotenv>=1.0.0
+reportlab>=4.0.0
+google-genai>=1.0.0
