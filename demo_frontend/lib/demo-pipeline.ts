@@ -134,7 +134,9 @@ export const runDemoPipeline = (input: TransactionInput): CaseRecord => {
 export const DEMO_JOB_PREFIX = "demo_";
 const SIMULATED_RUNTIME_MS = 4000;
 
-export const isDemoMode = (): boolean => process.env.TG_DEMO_MODE === "true";
+// On by default on Vercel (VERCEL=1), where the Python agents can't run; override with TG_DEMO_MODE.
+export const isDemoMode = (): boolean =>
+  process.env.TG_DEMO_MODE ? process.env.TG_DEMO_MODE === "true" : process.env.VERCEL === "1";
 
 export const encodeDemoJob = (input: TransactionInput): string =>
   DEMO_JOB_PREFIX +

@@ -44,7 +44,7 @@ Open http://localhost:3000/input, pick a demo profile and run the investigation.
 
 ## Deploy (Vercel)
 
-Root directory: `demo_frontend` · Environment variables: `TG_DEMO_MODE=true`, `NEXT_PUBLIC_TG_DEMO_MODE=true`
+Import the repo; `vercel.json` points Vercel at `demo_frontend`. Demo mode turns on automatically on Vercel (`VERCEL=1`); set `TG_DEMO_MODE=false` to disable it.
 
 ## Team
 
