@@ -18,7 +18,15 @@ export function SiteNav() {
       <nav className="site-nav shell">
         <Link href="/" className="brand">
           <span className="brand-dot" />
-          New Horizon
+          Transaction-Guard
+          {process.env.NEXT_PUBLIC_TG_DEMO_MODE === "true" && (
+            <span
+              title="Hosted demo: a TypeScript simulation of the 4-agent pipeline. Run locally for the full Python + Gemini pipeline."
+              style={{ marginLeft: 8, fontSize: 11, padding: "2px 8px", borderRadius: 999, border: "1px solid currentColor", opacity: 0.75 }}
+            >
+              demo mode
+            </span>
+          )}
         </Link>
         <div className="nav-links">
           {links.map((link) => {
