@@ -6,5 +6,7 @@
       "framework": "nextjs"
     }
   },
-  "rewrites": []
+  "rewrites": [
+    { "source": "/(.*)", "destination": { "service": "demo_frontend" } }
+  ]
 }
